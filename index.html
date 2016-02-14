@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Crystalforms Card Generator</title>
+    <script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script type="text/javascript" src="crystalforms_cards_1.js"></script>
+</head>
+<body>
+    <h2>Cards</h2>
+    <p>Display cards here:</p>
+    <div id="container">
+      <script type="text/babel">
+          var CardItem = React.createClass({
+            render: function() {
+              return <li>{this.props.data.name}</li>;
+            }
+          });
+
+          var CardList = React.createClass({
+            render: function() {
+              console.log(this.props.data);
+              return (
+                <ul>
+                  {this.props.data.map(function(result) {
+                    console.log(result);
+                     return <CardList key={result.name} data={result}/>;
+                  })}
+                </ul>
+              );
+            }
+          });
+
+
+          ReactDOM.render(
+              <CardList data={cards} />,
+              document.getElementById('container')
+          );
+      </script>
+    </div>
+</body>
+</html>
