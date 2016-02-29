@@ -1,0 +1,26 @@
+{
+  "name": "crystalforms",
+  "version": "1.0.0",
+  "description": "Card Generating web app for the game Crystalforms.",
+  "main": "main.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Direside/crystalforms.git"
+  },
+  "author": "Shane gearon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Direside/crystalforms/issues"
+  },
+  "homepage": "https://github.com/Direside/crystalforms#readme"
+}

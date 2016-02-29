@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <title>Crystalforms Card Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://fb.me/react-0.14.7.js"></script>
     <script src="https://fb.me/react-dom-0.14.7.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script type="text/babel" src="src/components/CardList.js"></script>
-    <script type="text/javascript" src="src/main.js"></script>
-    <script type="text/javascript" src="src/crystalforms_cards_1.js"></script>
+    <script type="text/javascript" src="./src/crystalforms_cards_1.js"></script>
 </head>
 <body>
     <h2>Cards</h2>
@@ -17,11 +16,6 @@
     <div id="container">
         <!-- // Cards will appear here. -->
     </div>
-    <script type="text/babel" src="build/main.js">
-      ReactDOM.render(
-        <CardList data={cards} />,
-        document.getElementById('container')
-      );
-    </script>
+    <script type="text/babel" src="./main.js"></script>
 </body>
 </html>
