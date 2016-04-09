@@ -300,7 +300,11 @@ var cards = [
                 text: "Your Cystals cannot be Shattered or Ruptured until the end of your next turn. Charge also has no effect."
             }
         ]
+<<<<<<< HEAD
     },
+=======
+    },    
+>>>>>>> eaea22e835dccc4b7020b0e0f92fadd9a387a958
     {
             name: "Koodi",
             colour: "yellow",
