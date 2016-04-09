@@ -1,0 +1,2 @@
+C:\Projects\crystalforms-generator\obj\Debug\crystalforms.njsprojResolveAssemblyReference.cache
+C:\Projects\crystalforms-generator\bin\Microsoft.NodejsTools.WebRole.dll

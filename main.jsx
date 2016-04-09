@@ -2,7 +2,7 @@ var CardItem = React.createClass({
   render: function() {
     return (
       <div className={this.props.data.colour + ' card'}>
-                <div className='cardTitle'>{this.props.data.name}</div>
+                <div className='cardTitle'>{this.props.data.name} - {this.props.data.numbers.toString()}</div>
                 <img className='cardImage' src={'./img/' + this.props.data.art} />
                 <div className='cardAbilities'>
                   {this.props.data.abilities.map(function(ability) {
