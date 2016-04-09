@@ -1,4 +1,6 @@
-var CardItem = React.createClass({
+var React = require('react');
+
+module.exports = React.createClass({
   render: function() {
     return (
       <div className={this.props.data.colour + ' card'}>
@@ -15,21 +17,3 @@ var CardItem = React.createClass({
     )
   }
 });
-
-var CardList = React.createClass({
-  render: function() {
-    return (
-      <div>
-        {this.props.data.map(function(result) {
-           return <CardItem key={result.name} data={result}/>;
-        })}
-      </div>
-    );
-  }
-});
-
-
-ReactDOM.render(
-    <CardList data={cards} />,
-    document.getElementById('container')
-);
