@@ -22,7 +22,27 @@
     margin-bottom: 2px;
     padding: 2px;
     font-family: Montserrat;
+    position: relative;
+    min-height: 20px;
 }
+
+.title {
+  position: absolute;
+}
+
+.numbers {
+  float: right;
+}
+
+.symbol {
+  margin: 5px;
+  margin-left: 10px;
+  font-size: 30px;
+  font-family: Montserrat;
+  position: absolute;
+  float: left;
+}
+
 
 .cardImage {
     background-color: rgba(255, 255, 255, 0.65);
