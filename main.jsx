@@ -33,15 +33,16 @@ class CardList extends React.Component {
     }
     render() {
         return (<div>
-             {this.state.data.map(function(result) {
-                return <CardItem key={result.name} data={result}/>;
-            })}
             <span>Version </span>
             <select id="versionChange" onChange={this.switchVersion}>
             {this.state.versions.map((result) => {
                 return <option key={result} value={result}>{result}</option>
             })}
-            </select>
+            </select><br />
+             {this.state.data.map(function(result) {
+                return <CardItem key={result.name} data={result}/>;
+            })}
+
             </div>
             );
    }

@@ -486,11 +486,11 @@ var cards = {
               },
               {
                   name: "Cleansing Aura",
-                  text: "Deactivate all of your ruptured Crystals, Shield 1."
+                  text: "Purge 2, Shield 1."
               },
               {
                   name: "Reflection",
-                  text: "Any time your Crystals would Shatter or be Charged, Shatter your opponents Crystals instead. Lasts until the end of your next turn."
+                  text: "Any time your Crystals would Shatter, Shatter your opponents Crystals instead. Lasts until the end of your next turn."
               }
           ]
       },
@@ -502,16 +502,16 @@ var cards = {
           numbers: [1, 4, 6],
           abilities: [
               {
-                  name: "Energy Charge",
-                  text: "Charge 1."
+                  name: "Energy Purge",
+                  text: "Purge 1."
               },
               {
                   name: "Crystal Slam",
-                  text: "Rupture 1, Shatter 1."
+                  text: "Purge 2, Shatter 1."
               },
               {
                   name: "Catalyst",
-                  text: "At the end of each players turn, you may Shatter 1 of your opponents crystals."
+                  text: "Purge X, Shatter X, where X is the number of ruptured crystals you have."
               }
           ]
       },
@@ -523,8 +523,8 @@ var cards = {
           numbers: [2, 3, 5],
           abilities: [
               {
-                  name: "Energy Charge",
-                  text: "Charge 1."
+                  name: "Energy Purge",
+                  text: "Purge 1."
               },
               {
                   name: "Smack and Block",
@@ -532,7 +532,7 @@ var cards = {
               },
               {
                   name: "Regrowth",
-                  text: "Deactivate your ruptured crystals. Shield X, where X is the number of ruptured crystals you deactivated."
+                  text: "Purge X, Shield X, where X is the number of ruptured crystals you deactivated."
               }
           ]
       },
@@ -544,8 +544,8 @@ var cards = {
           numbers: [2, 3, 5],
           abilities: [
               {
-                  name: "Energy Charge",
-                  text: "Charge 1."
+                name: "Energy Purge",
+                text: "Purge 1."
               },
               {
                   name: "Shield Assault",
@@ -565,8 +565,8 @@ var cards = {
           numbers: [2, 4, 5],
           abilities: [
               {
-                  name: "Energy Charge",
-                  text: "Charge 1."
+                name: "Energy Purge",
+                text: "Purge 1."
               },
               {
                   name: "Bolstered Defender",
