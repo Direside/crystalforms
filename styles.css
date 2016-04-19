@@ -3,6 +3,10 @@
     display: grid;
 }
 
+@media print {
+  * {-webkit-print-color-adjust:exact;}
+}
+
 .card {
     background-size: contain;
     border-radius: 10px;
