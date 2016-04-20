@@ -331,19 +331,19 @@ var cards = {
           colour: "red",
           art: "powza.png",
           symbol: "~",
-          numbers: [4, 5],
+          numbers: [4, 4, 5],
           abilities: [
               {
                   name: "Punch",
                   text: "Shatter 1."
               },
               {
-                  name: "One, two swing",
-                  text: "Crush 2. (If the opponent has any shielded crystals deactivate 2 of them, then shatter it)"
+                  name: "One, two, swing",
+                  text: "Crush 1, Shatter 1. (Shatter 1 shielded crystal and 1 deactivated crystal)"
               },
               {
                   name: "Haymaker",
-                  text: "Crush 3. (If the opponent has any shielded crystals deactivate 3 of them, then shatter them)"
+                  text: "Crush 3. (Shatter up to 3 shielded crystals, does not work on deactivated crystals)"
               }
           ]
       },
@@ -352,7 +352,7 @@ var cards = {
           colour: "red",
           art: "skit.png",
           symbol: "~",
-          numbers: [4, 2],
+          numbers: [4, 4, 2],
           abilities: [
               {
                   name: "Slash",
@@ -360,7 +360,7 @@ var cards = {
               },
               {
                   name: "Sword and Board",
-                  text: "Shield 2. Shatter 1."
+                  text: "Shield 1. Shatter 2."
               },
               {
                   name: "Bash",
@@ -373,7 +373,7 @@ var cards = {
           colour: "red",
           art: "jorg.png",
           symbol: "~",
-          numbers: [4, 3],
+          numbers: [4, 4, 3],
           abilities: [
               {
                   name: "Snipe",
@@ -381,7 +381,7 @@ var cards = {
               },
               {
                   name: "Poised Attack",
-                  text: "Rupture 1."
+                  text: "Rupture 2."
               },
               {
                   name: "Overload",
@@ -394,7 +394,7 @@ var cards = {
           colour: "red",
           art: "roket.png",
           symbol: "~",
-          numbers: [2, 4, 6],
+          numbers: [4, 4, 1],
           abilities: [
               {
                   name: "Jab",
@@ -415,19 +415,19 @@ var cards = {
           colour: "blue",
           art: "tol.png",
           symbol: "*",
-          numbers: [3, 4, 6],
+          numbers: [2, 2, 3],
           abilities: [
               {
                   name: "Guard",
                   text: "Shield 1"
               },
               {
-                  name: "Rapid Assault",
-                  text: "Rupture 1, Shatter 1."
+                  name: "Responsive Shielding",
+                  text: "Shield X, where X is your current ruptured crystals total."
               },
               {
-                  name: "Deadly Strike",
-                  text: "Rupture 4, at the beginning of your next turn, rupture 4 of your Crystals."
+                  name: "Renewed Shielding",
+                  text: "Purge X, Shield X, where X is your current ruptured crystals total."
               }
           ]
       },
@@ -436,7 +436,7 @@ var cards = {
           colour: "blue",
           art: "swin.png",
           symbol: "*",
-          numbers: [1, 2, 4],
+          numbers: [2, 2, 1],
           abilities: [
               {
                   name: "Guard",
@@ -457,7 +457,7 @@ var cards = {
           colour: "blue",
           art: "wolfrak.png",
           symbol: "*",
-          numbers: [1, 5, 6],
+          numbers: [2, 2, 4],
           abilities: [
               {
                   name: "Guard",
@@ -478,7 +478,7 @@ var cards = {
           colour: "blue",
           art: "snubs.png",
           symbol: "*",
-          numbers: [3, 5, 6],
+          numbers: [2, 2, 5],
           abilities: [
               {
                   name: "Guard",
@@ -486,7 +486,7 @@ var cards = {
               },
               {
                   name: "Cleansing Aura",
-                  text: "Purge 2, Shield 1."
+                  text: "Purge 2, Shield 2."
               },
               {
                   name: "Reflection",
@@ -499,7 +499,7 @@ var cards = {
           colour: "green",
           art: "kirk.png",
           symbol: "=",
-          numbers: [1, 4, 6],
+          numbers: [3, 3, 4],
           abilities: [
               {
                   name: "Energy Purge",
@@ -520,19 +520,19 @@ var cards = {
           colour: "green",
           art: "treek.png",
           symbol: "=",
-          numbers: [2, 3, 5],
+          numbers: [3, 3, 5],
           abilities: [
               {
                   name: "Energy Purge",
                   text: "Purge 1."
               },
               {
-                  name: "Smack and Block",
-                  text: "Shield 1, Shatter 1."
+                  name: "Purifying Smack",
+                  text: "Purge 1, Shatter 1."
               },
               {
                   name: "Regrowth",
-                  text: "Purge X, Shield X, where X is the number of ruptured crystals you deactivated."
+                  text: "Purge X, Deactivate X, where X is the number of ruptured crystals you have."
               }
           ]
       },
@@ -541,7 +541,7 @@ var cards = {
           colour: "green",
           art: "gung.png",
           symbol: "=",
-          numbers: [2, 3, 5],
+          numbers: [3, 3, 2],
           abilities: [
               {
                 name: "Energy Purge",
@@ -549,11 +549,11 @@ var cards = {
               },
               {
                   name: "Shield Assault",
-                  text: "Shatter X, where X is the number of shielded Crystals you have."
+                  text: "Shatter X, where X is the number of shielded crystals you have."
               },
               {
                   name: "Rally",
-                  text: "Return all of your Crystalforms to your hand, discard down to 4 at the end of your next turn."
+                  text: "Swap any number of your crystalforms with ones from your discard pile. You must still only have one of each colour."
               }
           ]
       },
@@ -562,7 +562,7 @@ var cards = {
           colour: "green",
           art: "klank.png",
           symbol: "=",
-          numbers: [2, 4, 5],
+          numbers: [3, 3, 1],
           abilities: [
               {
                 name: "Energy Purge",
@@ -582,7 +582,7 @@ var cards = {
           name: "Noon'sul",
           colour: "yellow",
           symbol: "+",
-          numbers: [4, 5, 6],
+          numbers: [1, 1, 4],
           art: "noonsul.png",
           abilities: [
               {
@@ -603,7 +603,7 @@ var cards = {
           name: "Teemal",
           colour: "yellow",
           symbol: "+",
-          numbers: [1, 2, 3],
+          numbers: [1, 1, 3],
           art: "teemal.png",
           abilities: [
               {
@@ -624,7 +624,7 @@ var cards = {
               name: "Koodi",
               colour: "yellow",
               symbol: "+",
-              numbers: [3, 4, 5],
+              numbers: [1, 1, 5],
               art: "koodi.png",
               abilities: [
                   {
@@ -645,7 +645,7 @@ var cards = {
           name: "Hamn",
           colour: "yellow",
           symbol: "+",
-          numbers: [3, 4, 5],
+          numbers: [1, 1, 2],
           art: "hamn.png",
           abilities: [
               {
@@ -659,6 +659,84 @@ var cards = {
               {
                   name: "Hold Strong",
                   text: "Any Crystals that would be Shattered or Charged are Ruptured instead. Lasts until the end of your next turn."
+              }
+          ]
+      },
+      {
+          name: "Hold Strong",
+          colour: "yellow",
+          symbol: "Effect",
+          numbers: [1],
+          art: "hamn.png",
+          abilities: [
+              {
+                  name: "Persistant Ability",
+                  text: "Any Crystals that would be Shattered or Charged are Ruptured instead. Lasts until the end of your next turn."
+              }
+          ]
+      },
+      {
+          name: "Borrowed Time",
+          colour: "yellow",
+          symbol: "Effect",
+          numbers: [1],
+          art: "koodi.png",
+          abilities: [
+              {
+                  name: "Persistant Ability",
+                  text: "You cannot lose the game until the end of your next turn."
+              }
+          ]
+      },
+      {
+          name: "Immunity",
+          colour: "yellow",
+          symbol: "Effect",
+          numbers: [1],
+          art: "teemal.png",
+          abilities: [
+              {
+                  name: "Persistant Ability",
+                  text: "Your Cystals cannot be Shattered or Ruptured until the end of your next turn. Charge also has no effect."
+              }
+          ]
+      },
+      {
+          name: "Overload",
+          colour: "yellow",
+          symbol: "Effect",
+          numbers: [1],
+          art: "noonsul.png",
+          abilities: [
+              {
+                  name: "One-time Ability",
+                  text: "At the end of your turn, Deactivate 2."
+              }
+          ]
+      },
+      {
+          name: "Reflection",
+          colour: "blue",
+          symbol: "Effect",
+          numbers: [1],
+          art: "snubs.png",
+          abilities: [
+              {
+                  name: "Persistant Ability",
+                  text: "Any time your Crystals would Shatter, Shatter your opponents Crystals instead."
+              }
+          ]
+      },
+      {
+          name: "Power Surge",
+          colour: "blue",
+          symbol: "Effect",
+          numbers: [1],
+          art: "snubs.png",
+          abilities: [
+              {
+                  name: "Persistant Ability",
+                  text: "All of your abilities Shatter, Rupture and Deactivate double the amount of Crystals until the end of your next turn."
               }
           ]
       }
