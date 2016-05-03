@@ -204,7 +204,7 @@ var cards = {
                },
                {
                    name: "Mimic",
-                   text: "X 2, where X is the first ability on a crystalform you have played this round (including this one)."
+                   text: "Choose the first ability on a crystalform you have played this round (including this one) and use it twice."
                },
                {
                    name: "Adaptation",
@@ -246,11 +246,11 @@ var cards = {
                },
                {
                    name: "Purifying Smack",
-                   text: "Purge 1, Shatter 1."
+                   text: "Purge 1, Absorb 1, Shatter 1."
                },
                {
                    name: "Regrowth",
-                   text: "Purge X, Deactivate X, where X is the number of ruptured crystals you have."
+                   text: "Purge 2, Absorb 3."
                }
            ]
        },
@@ -334,7 +334,7 @@ var cards = {
                },
                {
                    name: "Infinite Protection",
-                   text: "At the end of your turn you may Shield 1 or Deactivate 1. Lasts three turns."
+                   text: "At the end of your turn you may Shield 1 or Absorb 1. Lasts three turns."
                }
            ]
        },
