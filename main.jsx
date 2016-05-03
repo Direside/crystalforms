@@ -49,6 +49,6 @@ class CardList extends React.Component {
 
 
 ReactDOM.render(
-    <CardList data={cards["0.2"]} versions={Object.keys(cards)}/>,
+    <CardList data={cards["0.3"]} versions={Object.keys(cards)}/>,
     document.getElementById('container')
 );
