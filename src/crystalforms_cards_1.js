@@ -119,7 +119,7 @@ var cards = {
                    text: "Shield 1"
                },
                {
-                   name: "Responsive Shielding",
+                   name: "Responsive Shield",
                    text: "Shield X, where X is your current ruptured crystals total plus 2."
                },
                {
@@ -271,7 +271,7 @@ var cards = {
                },
                {
                    name: "Rally",
-                   text: "Shield X, Shatter Y where X is the number of crystalforms you've used this round and Y is 4 - X."
+                   text: "Shield X, Shatter Y where X is the number of colours you've used this round and Y is the number many you haven't."
                }
            ]
        },
